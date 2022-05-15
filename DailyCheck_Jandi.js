@@ -10,39 +10,3 @@ function Jandi(query, active_txt = '🟩', inactive_txt = '⬜') {
     }
     return _Jandi;
 }
-
-const Query = [
-    {
-        "year": 2022,
-        "month": 1,
-        "day": "auto",
-        "bit_flag": 0
-    },
-    {
-        "year": 2022,
-        "month": 2,
-        "day": "auto",
-        "bit_flag": 2147483647
-    },
-    {
-        "year": 2022,
-        "month": 3,
-        "day": "auto",
-        "bit_flag": 0
-    },
-    {
-        "year": 2022,
-        "month": 4,
-        "day": "auto",
-        "bit_flag": 2147483647
-    },
-    {
-        "year": 2022,
-        "month": 5,
-        "day": 16,
-        "bit_flag": 0
-    }
-];
-
-const _Jandi = Jandi(Query);
-console.log(_Jandi.map(e => e.join('')).join('\n'));
