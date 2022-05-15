@@ -10,7 +10,7 @@
 function Jandi(query, active_txt = '🟩', inactive_txt = '⬜') {...}
 ```
 
-```json
+```js
 /* Query */
 [
     {
