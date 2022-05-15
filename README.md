@@ -66,3 +66,6 @@ const Query = [
 const _Jandi = Jandi(Query);
 console.log(_Jandi.map(e => e.join('')).join('\n'));
 ```
+
+# Output
+<img width="556" alt="스크린샷 2022-05-16 02 24 18" src="https://user-images.githubusercontent.com/66173558/168485938-d7a0dae4-0855-4db0-9cd1-a220c9081941.png">
