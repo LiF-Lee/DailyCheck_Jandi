@@ -3,7 +3,7 @@
 
 ```js
 /**
- * @param {List} query
+ * @param {Array} query
  * @param {String} active_txt
  * @param {String} inactive_txt
  */
