@@ -21,9 +21,9 @@ function Jandi(query, max_horizontal = 'auto', active_txt = '🟩', inactive_txt
         "bit_flag": 0  // 잔디 비트플래그 값 (0~2147483647)
     },
     {
-        "year": 2022,  // 년
-        "month": 5,    // 월
-        "day": 16,     // 수동으로 설정
+        "year": 2022,           // 년
+        "month": 5,             // 월
+        "day": 16,              // 수동으로 설정
         "bit_flag": 2147483647  // 잔디 비트플래그 값 (0~2147483647)
     },
 ]
@@ -64,6 +64,13 @@ const Query = [
     }
 ];
 
-const _Jandi = Jandi(Query, 16, '▣', '□');
-console.log(_Jandi);
+const _Jandi = Jandi(Query);
+console.log('Output 1');
+console.log(_Jandi, '\n');
+
+const _Jandi_2 = Jandi(Query, 16);
+console.log('Output 2');
+console.log(_Jandi_2, '\n');
 ```
+
+# Output
