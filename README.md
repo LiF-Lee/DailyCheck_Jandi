@@ -71,7 +71,15 @@ console.log(_Jandi, '\n');
 const _Jandi_2 = Jandi(Query, 16);
 console.log('Output 2');
 console.log(_Jandi_2, '\n');
+
+const _Jandi_3 = Jandi(Query, 'auto', '[X]', '[ ]');
+console.log('Output 3');
+console.log(_Jandi_3, '\n');
+
+const _Jandi_4 = Jandi(Query, 5, '[X]', '[ ]');
+console.log('Output 4');
+console.log(_Jandi_4, '\n');
 ```
 
 # Output
-<img width="336" alt="스크린샷 2022-05-16 14 59 42" src="https://user-images.githubusercontent.com/66173558/168528965-4dd32a89-a087-4682-9766-f759ffeb1ee5.png">
+<img width="495" alt="스크린샷 2022-05-16 15 12 03" src="https://user-images.githubusercontent.com/66173558/168530275-1d43a12d-8ed1-46aa-baba-eccc0c1fc900.png">
