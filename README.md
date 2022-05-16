@@ -4,10 +4,11 @@
 ```js
 /**
  * @param {Array} query
+ * @param {Int} max_horizontal
  * @param {String} active_txt
  * @param {String} inactive_txt
  */
-function Jandi(query, active_txt = '🟩', inactive_txt = '⬜') {...}
+function Jandi(query, max_horizontal = 'auto', active_txt = '🟩', inactive_txt = '⬜') {...}
 ```
 
 ```js
@@ -20,9 +21,9 @@ function Jandi(query, active_txt = '🟩', inactive_txt = '⬜') {...}
         "bit_flag": 0  // 잔디 비트플래그 값 (0~2147483647)
     },
     {
-        "year": 2022,  // 년
-        "month": 5,    // 월
-        "day": 16,     // 수동으로 설정
+        "year": 2022,           // 년
+        "month": 5,             // 월
+        "day": 16,              // 수동으로 설정
         "bit_flag": 2147483647  // 잔디 비트플래그 값 (0~2147483647)
     },
 ]
@@ -64,8 +65,13 @@ const Query = [
 ];
 
 const _Jandi = Jandi(Query);
-console.log(_Jandi.map(e => e.join('')).join('\n'));
+console.log('Output 1');
+console.log(_Jandi, '\n');
+
+const _Jandi_2 = Jandi(Query, 16);
+console.log('Output 2');
+console.log(_Jandi_2, '\n');
 ```
 
 # Output
-<img width="556" alt="스크린샷 2022-05-16 02 24 18" src="https://user-images.githubusercontent.com/66173558/168485938-d7a0dae4-0855-4db0-9cd1-a220c9081941.png">
+<img width="336" alt="스크린샷 2022-05-16 14 59 42" src="https://user-images.githubusercontent.com/66173558/168528965-4dd32a89-a087-4682-9766-f759ffeb1ee5.png">
