@@ -74,3 +74,4 @@ console.log(_Jandi_2, '\n');
 ```
 
 # Output
+<img width="336" alt="스크린샷 2022-05-16 14 59 42" src="https://user-images.githubusercontent.com/66173558/168528965-4dd32a89-a087-4682-9766-f759ffeb1ee5.png">
