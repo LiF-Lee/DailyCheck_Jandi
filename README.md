@@ -4,7 +4,7 @@
 ```js
 /**
  * @param {Array} query
- * @param {Int} max_horizontal
+ * @param {String|Int} max_horizontal
  * @param {String} active_txt
  * @param {String} inactive_txt
  */
