@@ -3,11 +3,12 @@
 
 ```js
 /**
- * @param {List} query
+ * @param {Array} query
+ * @param {Int} max_horizontal
  * @param {String} active_txt
  * @param {String} inactive_txt
  */
-function Jandi(query, active_txt = '🟩', inactive_txt = '⬜') {...}
+function Jandi(query, max_horizontal = 'auto', active_txt = '🟩', inactive_txt = '⬜') {...}
 ```
 
 ```js
@@ -63,6 +64,6 @@ const Query = [
     }
 ];
 
-const _Jandi = Jandi(Query);
-console.log(_Jandi.map(e => e.join('')).join('\n'));
+const _Jandi = Jandi(Query, 16, '▣', '□');
+console.log(_Jandi);
 ```
